@@ -63,7 +63,7 @@ div.gallery {
   .responsive {
     padding: 0 6px;
     float: left;
-    width: 24.99999%;
+    width: 25%;
   }
   
 
@@ -85,3 +85,16 @@ footer {
     width: 100%;
     bottom: 0;
 }
+
+.flex-container {
+  display: flex;
+  background-color: DodgerBlue;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+}
+
