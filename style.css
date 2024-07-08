@@ -60,11 +60,8 @@ div.gallery {
     box-sizing: border-box;
   }
   
-  .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 25%;
-  }
+  
+  
   
 
 main {
@@ -72,6 +69,11 @@ main {
     color: #fff;
 }
 
+.mainGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+grid-gap:3rem;
+}
 section {
     margin-bottom: 2rem;
 }
@@ -97,4 +99,8 @@ footer {
   padding: 20px;
   font-size: 30px;
 }
-
+@media screen and (max-width: 600px) {
+.mainGrid {
+  grid-template-columns: 1fr;
+}
+}
