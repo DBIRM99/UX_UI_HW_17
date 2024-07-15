@@ -104,3 +104,34 @@ footer {
   grid-template-columns: 1fr;
 }
 }
+
+
+.preloader{
+
+  position:fixed;
+  width: 100%;
+  height:100vh;
+  z-index: 100000;
+  background-color: rgb(17, 14, 197);
+  top: 0%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.preloader img{
+  width: 150px;
+animation: spin 3s ease;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
